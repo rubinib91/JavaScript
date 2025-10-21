@@ -1,0 +1,206 @@
+const add=()=>{
+var a=10;
+var b=20
+var c=a+b;
+console.log(c)
+}
+add()
+const sub=()=>{
+var d=30;
+var e=20
+var f=d-e;
+console.log(f)
+}
+sub()
+const mul=()=>{
+var number1=3
+var number2=10
+var number3=number1*number2;
+console.log(number3)
+}
+mul()
+const div=()=>{
+var divident=155
+var divider=10
+var quotient=divident/divider
+console.log(quotient)
+}
+div()
+const avg=()=>{
+var n1=3
+var n2=10
+var n3=23
+var n4=55
+var n5=n1+n2+n3+n4/4;
+console.log(n5)
+}
+avg()
+const sum=()=>{
+var sum=0
+for(let i=1;i<=10;i++)
+sum= sum+i;
+console.log(sum)
+}
+sum()
+const invite=()=>{
+    console.log("Welcome to our home")
+}
+invite()
+const greater=()=>{
+    var a=10
+    var b=20
+    if(a>b){
+        console.log("a is greater");
+    }
+    else{
+        console.log("b is greater");
+    }
+}
+greater()
+const smaller=()=>{
+    var a=10
+    var b=20
+    if(a<b){
+        console.log("a is smaller");
+    }
+    else{
+        console.log("b is smaller");
+    }
+}
+smaller()
+const intro=()=>{
+    console.log("My name is Rubini")
+}
+intro()
+var y=20
+const sub1=()=>{
+console.log(y-1);
+}
+sub1()
+var x=10
+const add1=()=>{
+console.log(x+1);
+}
+add1()
+const mul1=()=>{
+for(var i=1;i<=5;i++)
+{
+console.log(i*1)
+}
+}
+mul1()
+const even=()=>{
+var a=10
+if(a%2==0)
+{
+console.log("a is even"
+}
+even()
+const odd=()=>{
+var a=15
+if(a%2!=0)
+{
+console.log("a is odd")
+}
+odd()
+const display=()=>{
+let Stu_Name="Aradhana"
+console.log(Stu_Name)
+}
+display()
+const discount=()=>{
+let percent=10
+let total_Amt=1000
+console.log(total_Amt/percent)
+}
+discount()
+const savings=()=>{
+let income=10000
+let expenses=1000
+console.log(income-expenses)
+}
+savings()
+const Bankdetails=()=>{
+let bank="canara"
+let Ac_No=324324
+let Ac_Name="agalya
+console.log(bank,Ac_No,Ac_Name)
+}
+Bankdetails()
+const Bill_Calc=()=>
+{
+let bill=3000
+let discount_rate=200
+console.log(bill-discount_rate)
+}
+Bill_Calc()
+const reminder=()=>
+{
+console.log("Drink Water")
+}
+reminder()
+const Grade=()=>
+{
+let mark=95
+if(mark>90)
+{
+console.log("grade a")
+}
+}
+Grade()
+const time=()=>
+{
+time=3
+if(time>12)
+{
+console.log("good morning")
+}
+time()
+const balance=()=>
+{
+balance=1000
+console.log(balance)
+}
+balance()
+const mock=()=>
+{
+console.log("Mock is cleared")
+}
+mock()
+const login=()=>
+{
+console.log("Login Successfully)
+}
+login()
+const submit=()=>{
+console.log("Form submitted successfully)
+}
+submit()
+const task=()=>{
+console.log("there are 8 tasks today")
+}
+task()
+
+const print=(line)=>{
+console.log(line)
+}
+let line="print the line"
+print(line)
+
+addition(10,20)
+const subtraction=(value1,value2)=>{
+    console.log(value1-value2)
+}
+subtraction(30,20)
+const multiply=(num1,num2)=>{
+    console.log(num1*num2)
+}
+multiply(30,20)
+const division=(divident,divisible)=>{
+    console.log(divident/divisible)
+}
+division(30,20)
+const average=(number1,number2)=>{
+    console.log((number1+number2)/2)
+}
+average(30,20)
