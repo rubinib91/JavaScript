@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array Prototypes</title>
+</head>
+<body>
+    <div>Array Prototypes</div>
+    <script>
+        // to find array length
+        const Array_1=[1,5,8,2,5,7]
+        var a=Array_1.length
+        console.log(a);
+        //to add extra elements. not used as expression
+        Array_1.push(3,2,1)
+        console.log(Array_1)
+        // to delete the last element. not used as expresssion
+        Array_1.pop()
+        console.log(Array_1)
+        // remove first element. not used as expression
+        Array_1.shift()
+        console.log(Array_1)
+        // add element to the start of the array
+        Array_1.unshift(23)
+        console.log(Array_1)
+        //combine two arrays. This is used as expression
+        var Array_2=["this is my"]
+        var Array_3=["friend"]
+        var New_Array=Array_2.concat(Array_3)
+        console.log(New_Array);
+        //convert all arrays into string.used as expression
+        var Joined_Array=Array_1.join("-")
+        console.log(Joined_Array);
+        // reverse the array order
+        Array_1.reverse()
+        console.log(Array_1);
+        //copies the portion of array. used as expression
+        var Sliced_Array=Array_1.slice(2,5)
+        console.log(Sliced_Array);
+        // splice add or remove elements from array. not used as expression
+        Array_1.splice(1,3,"45")
+        console.log(Array_1);
+        // returns true or false. used as expression
+        var a=Array_1.includes(10)
+        console.log(a);
+        // returns the index of the array.used asa expression
+       var b =Array_1.indexOf(23)
+        console.log(b);
+            </script>
+    
+</body>
+</html>
