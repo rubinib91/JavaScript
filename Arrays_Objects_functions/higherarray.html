@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Filter Reduce find</title>
+</head>
+<body>
+   <script>
+    var arr1=[1,2,3,4,5,6,7]
+    arr1.filter((curr,i)=>{
+        if(curr%2==0)
+    console.log('even',curr);
+    })
+    arr1.filter((curr,i)=>{
+    console.log(curr*2);
+    })
+    arr1.filter((curr,i)=>{
+    console.log(curr-1);
+    })
+    arr1.filter((curr,i)=>{
+        if(curr>2)
+    console.log(curr);
+    })
+arr1.filter((curr,i)=>{
+        if(curr<5)
+    console.log(curr);
+    })
+    arr1.filter((curr,i)=>{
+        if(curr%2!=0)
+    console.log('odd',curr);
+    })
+
+    arr1.filter((curr,i)=>{
+        if(curr%2==0)
+    console.log('index',i);
+    })
+    arr1.filter((curr,i)=>{
+    console.log(curr+5);
+    })
+    arr1.filter((curr,i)=>{
+    console.log(curr+i);
+    })
+    arr1.filter((curr,i)=>{
+    console.log(curr+10);
+    })
+
+    //reduce
+    let new_Array=[23,44,12,67,34,65]
+    const sum=new_Array.reduce((h,c)=>h+c,0)
+    console.log(sum);
+    
+ let new_Array1=[23,44,12,67,34,65]
+    const multiply=new_Array1.reduce((h,c)=>h*c,1)
+    console.log(multiply);
+    
+ let new_Array2=[23,44,12,67,34,65]
+    const subtract=new_Array2.reduce((h,c)=>h-c,0)
+    console.log(subtract);
+
+     let new_Array3=[23,44,12,67,34,65]
+    const sum1=new_Array3.reduce((h,c)=>h+c,5)
+    console.log(sum1);
+    
+     let new_Array4=[23,44,12,67,34,65]
+    const sum2=new_Array4.reduce((h,c)=>h+c,10)
+    console.log(sum2);
+    
+ let new_Array5=[23,44,12,67,34,65]
+    const sum5=new_Array3.reduce((h,c)=>h+c,25)
+    console.log(sum5);
+
+     let new_Array6=[23,44,12,67,34,65]
+    const sum6=new_Array3.reduce((h,c)=>h+c,2)
+    console.log(sum6);
+        //find
+        let array_a=[12,45,76,23,54,16]
+        let even=array_a.find((n)=>n%2==0)
+        console.log(even);
+        let odd=array_a.find((n)=>n%2!=0)
+        console.log(odd);
+        let greater=array_a.find((n)=>n>12)
+        console.log(greater);
+        let small=array_a.find((n)=>n<54)
+        console.log(small);
+
+        let housemates=["Kiran","Nilofer","reena","arjun"]
+        console.log(housemates[0][0],housemates[1][0],housemates[2][0],housemates[3][0]);
+        
+let obj={name:"yugan", age:"4"}
+for(i in obj)
+console.log(obj[i]);
+let patient_det={id:"001",address:"Chennai"}
+for( k in patient_det)
+console.log(patient_det[k]);
+let dob={value1:"5.10.24",value2:"6.1.20"}
+for(j in dob)
+console.log(dob[j]);
+let languages={name:"react",name1:"js"}
+for (o in languages)
+console.log(languages[o]);
+let college=["ksr","vellalar","nandha"]
+for(let k of college)
+console.log(k);
+let hospital=["mgm","apollo","kaveri"]
+for(j of hospital)
+console.log(j);
+let student=["kalai","kavi"]
+for(let i of student)
+console.log(i);
+let empno=["345","234","678"]
+for(let p of empno)
+console.log(p);
+
+
+   </script> 
+</body>
+</html>
