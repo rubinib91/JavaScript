@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom intro</title>
+</head>
+<body style="background-color: bisque;">
+    <div>
+    <h1 id="front" style="background-color: blueviolet; color: white; padding: 10px; display:flex; justify-content: center;">Welcome to Kohinoor Bakery</h1>
+   <div style="display: flex; align-items: center; justify-content: center;"> <button id="list" style="font-size:20px; background-color: rgb(9, 187, 241); color: white; margin-top: 10px; padding: 10px;">Available Products</button></div>
+    <div style="display: flex; justify-content:center; align-items:center;padding:5px; margin-top: 5px; display: none" id="listitems">
+        <button id="ordertea" style="color: white; background-color: darkblue; font-size:30px;">Tea</button>
+        <button id="ordercoffee" style="color: white; background-color: darkblue; font-size:30px;">Coffee</button>
+        <button id="ordergreentea" style="color: white; background-color: darkblue; font-size:30px;">GreenTea</button>
+        <button id="orderlemontea" style="color: white; background-color: darkblue; font-size:30px;">Lemon Tea</button>
+    </div>
+        <div style="display: flex; justify-content: center; align-items: center;" ><button  id="payment" style="background-color:goldenrod; color:white;margin-top: 20px;font-size: 30px; padding:10px; display:none;">Payment</button> </div>   
+</div>
+<div id="image"></div>
+<script>
+var buttonlist=document.getElementById("list")
+let tolist=document.getElementById("listitems")
+let ordergt=document.getElementById("ordergreentea")
+let orderlt=document.getElementById("orderlemontea")
+let ordertea=document.getElementById("ordertea")
+let ordercoffee=document.getElementById("ordercoffee")
+let paymentfororders=document.getElementById("payment")
+let imagedisplay=document.getElementById("image")
+buttonlist.addEventListener("click",()=>{
+    tolist.style.display="block"
+})
+ordertea.addEventListener("click",()=>{
+    paymentfororders.style.display="block"
+ paymentfororders.innerHTML="Please Pay the tea Rs.20"
+ imagedisplay.innerHTML='<img src="file:///D:/JavaScript/DOM/images/tea.jpg">'
+})
+ordercoffee.addEventListener("click",()=>{
+    paymentfororders.style.display="block"
+     paymentfororders.innerHTML="Please Pay for the Coffee Rs.25"
+     imagedisplay.innerHTML='<img src="file:///D:/JavaScript/DOM/images/coffee.jpg">'
+})
+  orderlt.addEventListener("click",()=>{
+    paymentfororders.style.display="block"
+     paymentfororders.innerHTML="Please Pay for the Lemon Tea Rs.35"
+     imagedisplay.innerHTML='<img src="file:///D:/JavaScript/DOM/images/lemontea.jpg">'
+})
+ordergt.addEventListener("click",()=>{
+    paymentfororders.style.display="block"
+    paymentfororders.innerHTML="Please Pay for the Green Tea Rs.30"
+    imagedisplay.innerHTML='<img src="file:///D:/JavaScript/DOM/images/greentea.jpg">'
+
+})
+paymentfororders.addEventListener("click",()=>{
+    alert("Enjoy your Tea")
+    })
+
+
+  
+</script>
+</body>
+</html>
