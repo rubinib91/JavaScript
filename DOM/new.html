@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Enter Fruits name and get its picture</h1>
+    <input type="text" id="name" placeholder="Enter fruit name"><br><br>
+    <button id="data">Submit</button>
+    <p id="display"></p><br><br>
+    <img id="image" src=""><br>
+<script>
+const imagedispaly=document.getElementById("image")
+const display=document.getElementById("display")
+const getdata=document.getElementById("data")
+getdata.addEventListener('click',()=>{
+const getname=document.getElementById("name").value 
+if(getname==="apple"){
+display.textContent=`This is ${getname}`
+        imagedispaly.src="./images/apple.jfif"
+}
+else if(getname==="banana"){
+   display.textContent=`This is ${getname}`
+        imagedispaly.src="./images/banana.jfif" 
+}
+else if(getname==="pomegranate"){
+   display.textContent=`This is ${getname}`
+        imagedispaly.src="./images/pomegranate.jfif" 
+}
+else if(getname==="guava"){
+   display.textContent=`This is ${getname}`
+        imagedispaly.src="./images/guava.jfif" 
+}
+else if(getname==="grapes"){
+   display.textContent=`This is ${getname}`
+        imagedispaly.src="./images/grapes.jfif" 
+}
+else if(getname==="mango"){
+   display.textContent=`This is ${getname}`
+        imagedispaly.src="./images/mango.jfif" 
+}
+else if(getname==="custard apple"){
+   display.textContent=`This is ${getname}`
+        imagedispaly.src="./images/custard.jfif" 
+}
+else if(getname==="pineapple"){
+   display.textContent=`This is ${getname}`
+        imagedispaly.src="./images/pineapple.jfif" 
+}
+else if(getname==="watermelon"){
+   display.textContent=`This is ${getname}`
+        imagedispaly.src="./images/watermelon.jfif" 
+}
+else if(getname==="orange"){
+   display.textContent=`This is ${getname}`
+        imagedispaly.src="./images/orange.jfif" 
+}
+})
+        </script>
+</body>
+</html>

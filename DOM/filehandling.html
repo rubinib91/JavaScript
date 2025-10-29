@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>File Handling</title>
+</head>
+<body>
+    <h1>Fruit Names and its Pictures</h1>
+    <input type="text" id="name" placeholder="enter apple"><br><br>
+    <button id="data">Submit</button>
+    <p id="display"></p><br><br>
+    <img id="image" src=""><br>
+
+<input type="text" id="name1"placeholder="enter orange"><br><br>
+    <button id="data1">Submit</button>
+    <p id="display1"></p><br><br>
+    <img id="image1" src=""><br>
+
+    <input type="text" id="name2"placeholder="enter pomegranate"><br><br>
+    <button id="data2">Submit</button>
+    <p id="display2"></p><br><br>
+    <img id="image2" src=""><br>
+
+    <input type="text" id="name3" placeholder="enter guava"><br><br>
+    <button id="data3">Submit</button>
+    <p id="display3"></p><br><br>
+    <img id="image3" src=""><br>
+
+<input type="text" id="name4" placeholder="enter custard apple"><br><br>
+    <button id="data4">Submit</button>
+    <p id="display4"></p><br><br>
+    <img id="image4" src=""><br>
+
+<input type="text" id="name5" placeholder="enter pineapple"><br><br>
+    <button id="data5">Submit</button>
+    <p id="display5"></p><br><br>
+    <img id="image5" src=""><br>
+
+    <input type="text" id="name6" placeholder="enter mango"><br><br>
+    <button id="data6">Submit</button>
+    <p id="display6"></p><br><br>
+    <img id="image6" src=""><br>
+
+<input type="text" id="name7" placeholder="enter banana"><br><br>
+    <button id="data7">Submit</button>
+    <p id="display7"></p><br><br>
+    <img id="image7" src=""><br>
+
+<input type="text" id="name8" placeholder="enter grapes"><br><br>
+    <button id="data8">Submit</button>
+    <p id="display8"></p><br><br>
+    <img id="image8" src=""><br>
+
+<input type="text" id="name9" placeholder="enter watermelon"><br><br>
+    <button id="data9">Submit</button>
+    <p id="display9"></p><br><br>
+    <img id="image9" src=""><br>
+
+
+    <script>
+        const imagedispaly=document.getElementById("image")
+        const display=document.getElementById("display")
+        const getdata=document.getElementById("data")
+        getdata.addEventListener('click',()=>{
+        const getname=document.getElementById("name").value 
+        if(getname==="apple"){
+        display.textContent=`This is ${getname}`
+        imagedispaly.src="./images/apple.jfif"
+        }
+        })
+        const imagedispaly1=document.getElementById("image1")
+        const display1=document.getElementById("display1")
+        const getdata1=document.getElementById("data1")
+        getdata1.addEventListener('click',()=>{
+        const getname1=document.getElementById("name1").value 
+        if(getname1==="orange"){
+        display1.textContent=`This is ${getname1}`
+        imagedispaly1.src="./images/orange.jfif"
+        }
+        })
+        const imagedispaly2=document.getElementById("image2")
+        const display2=document.getElementById("display2")
+        const getdata2=document.getElementById("data2")
+        getdata2.addEventListener('click',()=>{
+        const getname2=document.getElementById("name2").value 
+        if(getname2==="pomegranate"){
+        display2.textContent=`This is ${getname2}`
+        imagedispaly2.src="./images/pomegranate.jfif"
+        }
+        })
+        const imagedispaly3=document.getElementById("image3")
+        const display3=document.getElementById("display3")
+        const getdata3=document.getElementById("data3")
+        getdata3.addEventListener('click',()=>{
+        const getname3=document.getElementById("name3").value 
+        if(getname3==="guava"){
+        display3.textContent=`This is ${getname3}`
+        imagedispaly3.src="./images/guava.jfif"
+        }
+        })
+        const imagedispaly4=document.getElementById("image4")
+        const display4=document.getElementById("display4")
+        const getdata4=document.getElementById("data4")
+        getdata4.addEventListener('click',()=>{
+        const getname4=document.getElementById("name4").value 
+        if(getname4==="custard apple"){
+        display4.textContent=`This is ${getname4}`
+        imagedispaly4.src="./images/custard.jfif"
+        }
+        })
+        const imagedispaly5=document.getElementById("image5")
+        const display5=document.getElementById("display5")
+        const getdata5=document.getElementById("data5")
+        getdata5.addEventListener('click',()=>{
+        const getname5=document.getElementById("name5").value 
+        if(getname5==="pineapple"){
+        display5.textContent=`This is ${getname5}`
+        imagedispaly5.src="./images/pineapple.jfif"
+        }
+        })
+        const imagedispaly6=document.getElementById("image6")
+        const display6=document.getElementById("display6")
+        const getdata6=document.getElementById("data6")
+        getdata6.addEventListener('click',()=>{
+        const getname6=document.getElementById("name6").value 
+        if(getname6==="mango"){
+        display6.textContent=`This is ${getname6}`
+        imagedispaly6.src="./images/mango.jfif"
+        }
+        })
+        const imagedispaly7=document.getElementById("image7")
+        const display7=document.getElementById("display7")
+        const getdata7=document.getElementById("data7")
+        getdata7.addEventListener('click',()=>{
+        const getname7=document.getElementById("name7").value 
+        if(getname7==="banana"){
+        display7.textContent=`This is ${getname7}`
+        imagedispaly7.src="./images/banana.jfif"
+        }
+        })
+        const imagedispaly8=document.getElementById("image8")
+        const display8=document.getElementById("display8")
+        const getdata8=document.getElementById("data8")
+        getdata8.addEventListener('click',()=>{
+        const getname8=document.getElementById("name8").value 
+        if(getname8==="grapes"){
+        display8.textContent=`This is ${getname8}`
+        imagedispaly8.src="./images/grapes.jfif"
+        }
+        })
+        const imagedispaly9=document.getElementById("image9")
+        const display9=document.getElementById("display9")
+        const getdata9=document.getElementById("data9")
+        getdata9.addEventListener('click',()=>{
+        const getname9=document.getElementById("name9").value 
+        if(getname9==="watermelon"){
+        display9.textContent=`This is ${getname9}`
+        imagedispaly9.src="./images/watermelon.jfif"
+        }
+        })
+    </script>
+</body>
+</html>

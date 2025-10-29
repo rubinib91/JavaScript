@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Template Literals and ternary Operators</h1>
+
+    <script>
+        var a=10
+        var b=20
+        var c=30
+        var d=40
+        console.log(`The value of a is ${a}`);
+        console.log(`The value of b is ${b}`);
+        console.log(`The value of c is ${c}`);
+        console.log(`The value of d is ${d}`);
+        console.log(`The sum of a+b : ${a} and ${b} is ${a+b}`);
+        console.log(`The sum of a+c : ${a} and ${c} is ${a+c}`);
+        console.log(`The sum of a+d : ${a} and ${d} is ${a+d}`);
+        console.log(`The difference between d-a : ${d} and ${a} is ${d-a}`);
+        console.log(`The product of a*d : ${a} and ${d} is ${a*d}`)
+        console.log(`The product of  b*c: ${b} and ${c} is ${b*c}`)
+
+        let great=(a>b)?"A is Greater":"B is Greater"
+        console.log(great);
+        let small=(a<b)?"A is smaller":"B is smaller"
+        console.log(small);
+        let num=(a>10)?"A is grater than 10":"a is smaller than 10"
+        console.log(num);
+        let even=(b%2==0)?"b is even":"B odd"
+       console.log(even);
+        let odd=(c%2!=0)?"c is odd":" c is even"
+       console.log(odd);
+        let result=(c>d)?"c is Greater":"d is Greater"
+        console.log(result);
+        let equal=(c==d)?"c and d are equal":"c and d are not equal"
+        console.log(equal);
+        let equal2=(a==b)?"a and b are equal":"a and b are not equal"
+        console.log(equal2);
+       var age=23
+        let answer=(age>18)?"The person is adult":"The preson is not an adult"
+        console.log(answer);
+        var mark=85
+        let grade=(mark>90)?"Your Grade is A":"Your grade is B"
+        console.log(grade);
+        let i=(c==15)?"the value of c is 15":"the value of c is not 15"
+    
+        console.log(i);
+        
+        
+    </script>
+</body>
+</html>
