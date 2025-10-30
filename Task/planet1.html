@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Dream Planet</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Poppins', sans-serif;
+
+        }
+
+        nav {
+            background-color: rgba(0, 0, 0, 0.7);
+            padding: 15px;
+            text-align: right;
+            position: fixed;
+            width: 100%;
+            top: 0;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 20px;
+        }
+
+        .home {
+            height: 100vh;
+            background-image: url('https://images.unsplash.com/photo-1462331940025-496dfbfc7564?auto=format&fit=crop&w=1600&q=80');
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+            color: #fff;
+            text-align: center;
+        }
+
+        .homebox {
+            background: rgba(0, 0, 0, 0.6);
+            border: 2px solid rgba(123, 228, 149, 0.6);
+            border-radius: 15px;
+            padding: 40px;
+            max-width: 800px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+        }
+
+        .addmember {
+            padding: 20px;
+            background-color: #eafbea;
+            text-align: center;
+        }
+
+        .formbox {
+            background-color: white;
+            max-width: 500px;
+            margin: 0 auto;
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        input,
+        textarea {
+            width: 80%;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 8px;
+            border: 1px solid #a3d9a5;
+            font-size: 20px
+        }
+
+        button {
+            background-color: #2d6a4f;
+            color: white;
+            border: none;
+            padding: 10px;
+            border-radius: 8px;
+        }
+
+        .planetsections {
+            background: linear-gradient(to bottom, #020024, #090979, #00d4ff);
+            color: #fff;
+            text-align: center;
+            padding: 60px 20px;
+        }
+
+        .planetsections h2 {
+            font-size: 2.5rem;
+            margin-bottom: 40px;
+            color: #a8ffb0;
+            text-shadow: 0 0 10px rgba(168, 255, 176, 0.7);
+        }
+
+        .cardcontainer {
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            gap: 30px;
+        }
+
+        .card {
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 15px;
+            width: 180px;
+            padding: 15px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+            transition: transform 0.3s, box-shadow 0.3s;
+            text-align: center;
+        }
+
+        .card img {
+            width: 100%;
+            height: 120px;
+            object-fit: cover;
+            border-radius: 10px;
+            margin-bottom: 10px;
+        }
+
+        .card h3 {
+            color: #7be495;
+            font-size: 20px;
+            margin: 0;
+        }
+
+        .education {
+            margin: 10px;
+            color: #063d1e;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 90vh;
+            background-color: #2895e2;
+            border-radius: 10px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+            display: flex;
+            max-width: 2000px;
+        }
+
+        .education img {
+            width: 50%;
+            object-fit: cover;
+        }
+
+        .content {
+            padding: 20px;
+            width: 50%;
+        }
+
+        .content h2 {
+            color: #1a7c4a;
+            margin-bottom: 10px;
+        }
+
+        .sports {
+            margin: 5px;
+            color: #063d1e;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 70vh;
+            background-color: #2895e2;
+            border-radius: 10px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+            display: flex;
+            max-width: 2000px;
+        }
+
+        .sports img {
+            width: 40%;
+            object-fit: cover;
+        }
+        .nature{
+            margin: 5px;
+            color: #063d1e;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 70vh;
+            background-color: #2895e2;
+            border-radius: 10px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+            display: flex;
+            max-width: 2000px;
+        }
+
+        .nature img {
+            width: 40%;
+            object-fit: cover;
+        }
+         .occupation {
+            margin: 5px;
+            color: #063d1e;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 70vh;
+            background-color: #2895e2;
+            border-radius: 10px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+            display: flex;
+            max-width: 2000px;
+        }
+
+        .occupation img {
+            width: 30%;
+            object-fit: cover;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#addmember">Add Member</a>
+    </nav>
+
+    <section class="home" id="home">
+        <div class="homebox">
+            <h1>Welcome to Auranis</h1>
+            <p> Auronis is a planet of peaceful energy, Where Nature, Peace, and Learning Live in Harmony.
+                It is a world surrounded by lush greenery, fresh air, and calm minds,
+                a place where life moves at a peaceful pace, away from stress and noise.
+                On this planet, people live close to nature, grow their own food,
+                and learn through practical experiences instead of pressure-filled exams.
+                <br><br>
+                Work here is joy, not burden. Every individual spends time doing what they love,
+                creating, exploring, and learning from life itself.
+                Children learn under open skies, guided by curiosity and kindness.
+                <br><br>
+                This Dream Planet stands for happiness, simplicity, and harmony.
+                It's a home for dreamers who believe that peace, love, and green life
+                are the real treasures of the universe.
+            </p>
+        </div>
+    </section>
+    <section class="planetsections">
+        <h2>Life on Our Dream Planet</h2>
+        <div class="cardcontainer">
+            <div class="card">
+                <img src="./images/PO-outdoor-education.jpg" alt="Education">
+                <h3>Education</h3>
+            </div>
+
+            <div class="card">
+                <img src="./images/occupation.jfif" alt="Occupation">
+                <h3>Occupation</h3>
+            </div>
+
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1501785888041-af3ef285b470?auto=format&fit=crop&w=400&q=80"
+                    alt="Nature">
+                <h3>Nature</h3>
+            </div>
+
+            <div class="card">
+                <img src="./images/sports.jfif" alt="Sports">
+                <h3>Sports</h3>
+            </div>
+        </div>
+    </section>
+    <div class="education">
+        <img src="./images/edu.jpg" alt="Education on Green Planet">
+        <div class="content">
+            <h2>Education on Auranis Planet</h2>
+            <p>
+                On our planet, education is peaceful and practical. Students learn under open skies and among nature.
+                They explore through real experiences instead of memorization, blending creativity, science, and
+                community learning.
+            </p>
+            <p>
+                Children grow through art, teamwork, and curiosity. Here, learning isn't about pressure — it's about
+                joy, discovery, and connection with the world.
+            </p>
+        </div>
+    </div>
+    <div class="sports">
+        <img src="./images/sports.jfif" alt="Sports on Green Planet">
+        <div class="content">
+            <h2>Sports on Auranis Planet</h2>
+            <p>Sports on our planet are filled with joy and connection. There is no competition, only fun and teamwork.
+            </p>
+            <p>People play outdoors surrounded by greenery — football, cycling, yoga, and hiking help everyone stay
+                active and happy.</p>
+            <p>Sports here are not about winning but about friendship, health, and harmony with nature.</p>
+        </div>
+    </div>
+    <div class="nature">
+        <img src="./images/nature.jpg" alt="">
+        <div class="content">
+            <h2>Nature on Auronis Planet</h2>
+            <p>Auraris is full of green forests and clear rivers.
+
+                The air is always fresh and clean.
+
+                Trees glow softly at night, lighting the planet naturally.
+
+                Animals and humans live together in peace.
+
+                Flowers bloom all year, spreading sweet fragrance.
+
+                Nature and technology work together in balance.
+
+                Auroris is calm, pure, and full of life.</p>
+        </div>
+    </div>
+<div class="occupation">
+        <img src="./images/occupation.jfif">
+        <div class="content">
+            <h2>Occupation on Auranis Planet</h2>
+            <p>In Auranis, occupations are more than just jobs — they are expressions of passion and purpose. Every individual chooses work that brings joy, balance, and harmony to life.
+People engage in nature-inspired professions such as:
+Eco Builders : designing homes that blend seamlessly with nature.
+Nature Healers : restoring the health of the planet and its people.
+Experience Teachers : guiding others through practical, stress-free learning.
+Environmental Guardians :p rotecting forests, water, and wildlife.
+Work in Auranis is peaceful, creative, and meaningful.
+No pressure, no hierarchy — only happiness and contribution.
+Here, every occupation helps the planet grow and every person shine. </p>
+   </div>
+    </div>
+    <section class="addmember" id="addmember">
+        <h2>Join Our Dream Planet</h2>
+        <div class="formbox">
+            <form>
+                <input type="text" placeholder="Enter your name" required>
+                <input type="email" placeholder="Enter your email" required>
+                <textarea placeholder="Why do you want to join?" rows="4"></textarea>
+                <button type="submit">Add Member</button>
+            </form>
+        </div>
+    </section>
+    <footer>
+        copyrights@ 2025 Dream Planet | Built with Peace & Nature
+    </footer>
+</body>
+
+</html>
