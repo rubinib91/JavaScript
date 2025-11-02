@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Form Validation</title>
+</head>
+<body>
+  <center>
+    <h2>Registration Form</h2>
+
+    <label>Enter Name:</label>
+    <input type="text" id="username"><br><br>
+
+    <label>Enter Email:</label>
+    <input type="email" id="email"><br><br>
+
+    <label>Enter Password:</label>
+    <input type="password" id="password"><br><br>
+
+    <label>Enter Age:</label>
+    <input type="text" id="age"><br><br>
+
+    <label>Gender:</label>
+    <input type="radio" name="gender" value="Male">Male
+    <input type="radio" name="gender" value="Female">Female
+    <br><br>
+
+    <label>Enter Mobile Number:</label>
+    <input type="tel" id="mobile"><br><br>
+
+    <label>Enter Address:</label><br>
+    <textarea id="address" rows="4" cols="30"></textarea><br><br>
+
+    <button type="button" id="submit">Register</button>
+
+    <p id="display"></p>
+  </center>
+
+  <script>
+    document.getElementById("submit").addEventListener("click", function() {
+
+      let name = document.getElementById("username").value
+      let email = document.getElementById("email").value
+      let password = document.getElementById("password").value
+      let age = document.getElementById("age").value
+      let gender = document.querySelector('input[name="gender"]:checked');
+      let mobile = document.getElementById("mobile").value
+      let address = document.getElementById("address").value
+      let display = document.getElementById("display");
+
+      display.innerHTML = "";
+      display.style.color = "red";
+      if (name === "" || email === "" || password === "" || age === "" || !gender || mobile === "" || address === "") {
+        display.innerHTML = "Please fill all fields!";
+        return;
+      }
+
+      if (!email.includes("@") || !email.includes(".") || email.startsWith("@") || email.endsWith("@")) {
+        display.innerHTML = "Enter a valid email (must contain @ and .)";
+        return;
+      }
+
+      if (password.length < 8) {
+        display.innerHTML = "Password must be at least 8 characters long.";
+        return;
+      }
+
+      if (isNaN(age) || Number(age) <= 18) {
+        display.innerHTML = "Age must be greater than 18.";
+        return;
+      }
+
+      if (isNaN(mobile) || mobile.length !== 10) {
+        display.innerHTML = "Mobile number must be exactly 10 digits.";
+        return;
+      }
+      if (address.length < 20) {
+        display.innerHTML = "Address must be at least 20 characters long.";
+        return;
+      }
+      else 
+      {
+        alert("Registration Successful!");
+        name=""
+        email=""
+        password=""
+        age=""
+        mobile=""
+        address=""
+      }
+    });
+  </script>
+</body>
+</html>

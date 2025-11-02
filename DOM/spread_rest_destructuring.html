@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spread, Rest, and Destructuring</title>
+</head>
+
+<body>
+    <h1>Destructuring Using Arrays and Objects</h1>
+    <h2>Destructuring Using Arrays </h2>
+    <p id="display1"></p>
+    <p id="display2"></p>
+    <p id="display3"></p>
+    <p id="display4"></p>
+    <p id="display5"></p>
+    <p id="display6"></p>
+    <p id="display7"></p>
+    <p id="display8"></p>
+    <p id="display9"></p>
+    <p id="display10"></p>
+    <h2>Destructuring Using Objects </h2>
+    <p id="obj1"></p>
+    <p id="obj2"></p>
+    <p id="obj3"></p>
+    <p id="obj4"></p>
+    <p id="obj5"></p>
+    <p id="obj6"></p>
+    <p id="obj7"></p>
+    <p id="obj8"></p>
+    <p id="obj9"></p>
+    <p id="obj10"></p>
+
+    <script>
+//arrays destructuring
+        const a = [23, 45, 35, 56]
+        const [num1, num2, num3, num4] = a
+        let Textdisplay1 = document.getElementById("display1")
+        Textdisplay1.innerHTML = `The value is ${num1}`
+        let mark = [85, 89, 76, 98, 35]
+        let [m1, m2, m3, m4, m5] = mark
+        let Textdisplay2 = document.getElementById("display2")
+        Textdisplay2.innerHTML = `The mark is ${m4}`
+        let name = ["Eniyaa", "Nila", "Guru"]
+        let [n1, n2, n3] = name
+        let Textdisplay3 = document.getElementById("display3")
+        Textdisplay3.innerHTML = `The name is ${n1}`
+        let age = ["23", "55", "32", "78", "89"]
+        let [a1, a2, a3, a4, a5] = age
+        let Textdisplay4 = document.getElementById("display4")
+        Textdisplay4.innerHTML = `The age is ${a4}`
+        let Emp_Id = ["005", "008", "090", "043"]
+        let [e1, e2, e3, e4] = Emp_Id
+        let Textdisplay5 = document.getElementById("display5")
+        Textdisplay5.innerHTML = `The emp id is ${e2}`
+        let grade = ["A", "B", "C", "E", "D"]
+        let [g1, g2, g3, g4, g5] = grade
+        let Textdisplay10 = document.getElementById("display10")
+        Textdisplay10.innerHTML = `The grade is ${g3}`
+
+        let travel = ["Delhi", "Kerala", "Karnataka", "Manali", "Kashmir"]
+        let [p1, p2, p3, p4, p5] = travel
+        let Textdisplay6 = document.getElementById("display6")
+        Textdisplay6.innerHTML = `The place is ${p1}`
+
+        let languages = ["Tamil", "English", "Malayalam", "Telungu"]
+        let [l1, l2, l3, l4] = languages
+        let Textdisplay7 = document.getElementById("display7")
+        Textdisplay7.innerHTML = `The language is ${l3}`
+
+        let Methods = ["reduce", "filter", "find", "includes", "length"]
+        let [s1, s2, s3, s4, s5] = Methods
+        let Textdisplay8 = document.getElementById("display8")
+        Textdisplay8.innerHTML = `The method name is ${s5}`
+
+        let Front_End = ["html", "CSS", "JS", "react"]
+        let [f1, f2, f3, f4] = Front_End
+        let Textdisplay9 = document.getElementById("display9")
+        Textdisplay9.innerHTML = `The design is done by ${f2}`
+//object destructring
+        const Values = { v1: 23, v2: 45, v3: 35, v4: 56 }
+        const { v1, v2, v3, v4 } = Values
+        let object1 = document.getElementById("obj1")
+        object1.innerHTML = `The value is ${v2}`
+
+        let marks = { name1: 85, name2: 89, name3: 76, name4: 98, name5: 35 }
+        let { name1, name2, name3, name4, name5 } = marks
+        let object2 = document.getElementById("obj2")
+        object2.innerHTML = `The mark secured is ${name2}`
+
+        let names = { Name1: "Eniyaa", Name2: "Nila", Name3: "Guru" }
+        let { Name1, Name2, Name3 } = names
+        let object3 = document.getElementById("obj3")
+        object3.innerHTML = `The name is ${Name2}`
+
+        let ages = { age1: 23, age2: 55, age3: 32, age4: 78, age5: 89 }
+        let { age1, age2, age3, age4, age5 } = ages
+        let object4 = document.getElementById("obj4")
+        object4.innerHTML = `The age is ${age1}`
+
+        let Emp_Ids = { eid1: "005", eid2: "008", eid3: "090", eid4: "043" }
+        let { eid1, eid2, eid3, eid4 } = Emp_Ids
+        let object5 = document.getElementById("obj5")
+        object5.innerHTML = `The eid is ${eid4}`
+
+        let grades = { stuname: "eniyaa", class1: "5" }
+        let { stuname, class1 } = grades
+        let object6 = document.getElementById("obj6")
+        object6.innerHTML = `The class is ${class1}`
+
+        let traveling = { place: "kerala", days: 3, amount: 20000, members: 5 }
+        let { place, days, amount, members } = traveling
+        let object7 = document.getElementById("obj7")
+        object7.innerHTML = `The days is ${days}`
+
+
+        let languages1 = { language: "tamil", speakers: 10, poems: 15, year: 1991 }
+        let { language, speakers, poems, year } = languages1
+        let object8 = document.getElementById("obj8")
+        object8.innerHTML = `The poems count is ${poems}`
+
+        let Array_Methods = { mname2: "reduce", use: "onevalue", purpose: "in array" }
+        let { mname2, use, purpose } = Array_Methods
+        let object9 = document.getElementById("obj9")
+        object9.innerHTML = `It is used in ${purpose}`
+
+        let Web_Dev = { languagename: "html", basic: "structure", usein: "tags", feature: "attributes" }
+        let { languagename, basic, usein, feature } = Web_Dev
+        let object10 = document.getElementById("obj10")
+        object10.innerHTML = `The feature is ${feature}`
+//spread operator
+        let arr=[1,2,3,4,5]
+        let arr1=[...arr,9,7,8,6]
+        console.log(arr1);
+
+        let string1=["c","c++","java","python"]
+        let string2=[...string1,"react","node"]
+        console.log(string2);
+
+        let topic=["percentage","ratio","ages","train"]
+        let addtopic=[...topic,"simplification","time and work"]
+        console.log(addtopic);
+
+        let character=["spiderman","ironman","captain america"]
+        let character1=[...character,"batman"]
+        console.log(character1);
+
+        let fruits=["mango","orange","apple"]
+        let addfruits=["pomegranate","guava"]
+        console.log(addfruits);
+
+        //rest operator
+        const display_values=(...num)=>{num.filter(num=>num>30)
+console.log(display_values[10,20,30,40]);
+        }
+    </script>
+</body>
+
+</html>
