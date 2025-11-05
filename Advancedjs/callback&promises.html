@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //promise syntax
+    // return new Promise((resolve,reject)=>{
+
+    // })
+    // return new promise((resolve,reject)=>{
+
+    // })
+    // return new promise((reject,resolve)=>{
+
+    // })
+    // return new promise((reject,resolve)=>{
+
+    // })
+    // return new promise((reject,resolve)=>{
+
+    // })
+    // return new promise((reject,resolve)=>{
+
+    // })
+    // return new promise((reject,resolve)=>{
+
+    // })
+    // return new promise((reject,resolve)=>{
+
+    // })
+    // return new promise((reject,resolve)=>{
+
+    // })
+    // return new promise((reject,resolve)=>{
+
+    // })
+    // return new promise((reject,resolve)=>{
+
+    // })
+    // return new promise((reject,resolve)=>{
+
+    // })
+    // return new promise((reject,resolve)=>{
+
+    // })
+    // return new promise((reject,resolve)=>{
+
+    // })
+    // return new promise((reject,resolve)=>{
+
+
+    // })
+    // return new promise((reject,resolve)=>{
+
+    // })
+    // return new promise((reject,resolve)=>{
+
+    // })
+    // return new promise((reject,resolve)=>{
+
+    // })
+    // return new promise((reject,resolve)=>{
+
+    // })
+//then syntax
+    // .then((msg)=>{
+
+    // })
+    // .then((msg)=>{
+
+    // })
+    // .then((msg)=>{
+
+    // })
+    // .then((msg)=>{
+
+    // })
+    // .then((msg)=>{
+
+    // })
+    // .then((msg)=>{
+
+    // })
+    // .then((msg)=>{
+
+    // })
+    // .then((msg)=>{
+
+    // })
+    // .then((msg)=>{
+
+    // })
+    // .then((msg)=>{
+
+    // })
+    // .then((msg)=>{
+
+    // })
+    // .then((msg)=>{
+
+    // })
+    // .then((msg)=>{
+
+    // })
+    // .then((msg)=>{
+
+    // })
+    // .then((msg)=>{
+
+    // })
+    // .then((msg)=>{
+
+    // })
+    // .then((msg)=>{
+
+    // })
+    // catch syntax
+    // .catch((error)=>{
+
+//     })
+//     .catch((error)=>{
+
+//     })
+
+//     .catch((error)=>{
+
+//    })
+//    .catch((error)=>{
+
+//    })
+//     .catch((error)=>{
+
+//     })
+//     .catch((error)=>{
+
+//     })
+
+//     .catch((error)=>{
+
+//    })
+//    .catch((error)=>{
+    
+//    })
+//     .catch((error)=>{
+
+//     })
+//     .catch((error)=>{
+
+//     })
+
+//     .catch((error)=>{
+
+//    })
+//    .catch((msg)=>{
+    
+//    })
+
+const x=((data, payment)=> {
+  console.log("Payment Processing:", data);
+  payment();
+})
+
+processData("Payment Done", function() {
+  console.log("Payment DOne Successfully");
+});
+
+function processData(data) {
+  return new Promise((resolve, reject) => {
+    console.log("Processing:", data);
+    
+    // Simulate success
+    const success = true;
+
+    if (success) {
+      resolve("Data processed successfully!");
+    } else {
+      reject("Error while processing data!");
+    }
+  });
+}
+
+processData("User data")
+  .then((message) => {
+    console.log(message); // Runs if resolved
+  })
+  .catch((error) => {
+    console.log(error); // Runs if rejected
+  });
+
+</script>
+</body>
+</html>
