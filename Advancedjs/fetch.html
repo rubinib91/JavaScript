@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>fetch function</title>
+</head>
+<body>
+    <script>
+        const displaydata=async()=>{
+            try{
+                console.log('Getting datas from URL')
+                const retrieve=await fetch("https://dummyjson.com/recipes")
+                const stored = await retrieve.json()
+                console.log(stored.recipes)
+            }
+            catch(error){
+                console.log('Something went wrong, Please check',error);
+                
+
+            }
+            finally{
+                console.log('Successfully COmpleted');
+                
+            }
+        }
+        displaydata()
+//        
+    </script>
+</body>
+</html>
